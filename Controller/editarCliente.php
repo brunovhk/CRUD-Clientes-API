@@ -14,7 +14,6 @@ try {
         $complemento = $_POST['complemento'];
         $numero = $_POST['numero'];
         $endereco = $uf . ',' . $localidade . ',' . $bairro . ',' . $logradouro . ',' . $numero;
-        var_dump($endereco);
         $cep = $_POST['cep'];
         $fone = $_POST['fone'];
         $limiteCredito = $_POST['LimiteCredito'];
