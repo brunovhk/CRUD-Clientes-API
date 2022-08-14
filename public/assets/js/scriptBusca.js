@@ -5,7 +5,7 @@ $(document).ready(function () {
             var dados = $(this).serialize();
             // Realiza o post e retorna os dados de pesquisa
             $.ajax({
-                url: 'Controller/buscarCliente.php',
+                url: '/pesquisar',
                 type: 'POST',
                 dataType: 'html',
                 data: dados,

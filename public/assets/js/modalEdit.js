@@ -38,7 +38,7 @@ $(document).ready(function () {
         var validade = $('#validade').val();
         // Post para alteração dos valores no banco de dados.
         $.ajax({
-            url: 'Controller/editarCliente.php',
+            url: '/editar',
             method: 'POST',
             data: {
                 id: id,
