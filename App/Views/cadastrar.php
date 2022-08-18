@@ -1,34 +1,18 @@
-<!doctype html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- JQuery -->
-    <script src="resources/js/jquery-3.6.0.min.js"></script>
-    <!-- Bootstrap 5 -->
-    <script src="/resources/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
-    <title>CRUD Clientes</title>
-</head>
-<body>
-<?php
-include('resources/views/layouts/header.php');
-?>
 <h2 class="text-center mt-3">Cadastro de clientes</h2>
 <div class="container border border-dark shadow-lg mb-5 bg-body rounded">
-    <form action="/Controller/criarCliente.php" method="post" id="form-cadastro">
+    <form action="" method="post" id="form-cadastro">
         <div class="row m-2">
             <div class="col-6">
 
                 <label for="nome" class="form-label fw-bold">Nome:</label>
-                <input type="text" class="form-control" id="nome" placeholder="Digite o nome" name="nome" maxlength="150">
+                <input type="text" class="form-control" id="nome" placeholder="Digite o nome" name="nome"
+                       maxlength="150">
                 <label for="cpf_cnpj" class="form-label fw-bold">CPF ou CNPJ:</label>
                 <input type="text" class="form-control" id="cpf_cnpj" placeholder="Digite o CPF ou CNPJ"
                        name="cpf_cnpj" maxlength="20">
                 <label for="fone" class="form-label fw-bold">Telefone: </label>
-                <input type="tel" class="form-control" id="fone" placeholder="Digite o telefone" name="fone" maxlength="11">
+                <input type="tel" class="form-control" id="fone" placeholder="Digite o telefone" name="fone"
+                       maxlength="11">
                 <label for="limiteCredito" class="fw-bold">Estabeleça um limite de crédito:</label>
                 <div class="input-group form-control">
                     <span class="input-group-text fw-bold">R$</span>
@@ -67,11 +51,8 @@ include('resources/views/layouts/header.php');
     </form>
 </div>
 <!-- Adicionando Javascript -->
-<script src="resources/js/apiViaCep.js">
-
-</script>
 <script type="text/javascript">
-//    Post do form de cadastro para o controller de cadastro
+    //    Post do form de cadastro para o controller de cadastro
     var formCadastro = $("#form-cadastro");
 
     formCadastro.submit(function (e) {
@@ -85,18 +66,13 @@ include('resources/views/layouts/header.php');
             }
         })
     })
-
-</script>
-<script>
-//    Validação para apenas números no campo CPF/CNPJ
+    //    Validação para apenas números no campo CPF/CNPJ
     var cpf = document.getElementById("cpf_cnpj");
-    cpf.addEventListener("keypress", e=>{
-        if(e.keyCode>=48 && e.keyCode<=57){
+    cpf.addEventListener("keypress", e => {
+        if (e.keyCode >= 48 && e.keyCode <= 57) {
             return true;
-        }else{
+        } else {
             e.preventDefault(); // bloqueia o evento padrão ao apertar as teclas
         }
     })
 </script>
-</body>
-</html>

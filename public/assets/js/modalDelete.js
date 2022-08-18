@@ -9,7 +9,7 @@ $(document).ready(function () {
         var id = $('#clienteID').val();
         console.log(id);
         $.ajax({
-            url: 'Controller/deletarCliente.php',
+            url: '/excluir',
             method: 'POST',
             data: {
                 id: id

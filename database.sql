@@ -6,7 +6,7 @@ CREATE TABLE CLIENTES
     DataHoraCadastro datetime,
     Codigo           varchar(15),
     Nome             varchar(150),
-    CPF_CNPJ         varchar(20),
+    CPF_CNPJ         varchar(20) unique,
     CEP              integer,
     Logradouro       varchar(100),
     Bairro           varchar(50),

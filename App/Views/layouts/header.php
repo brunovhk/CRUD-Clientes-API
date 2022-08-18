@@ -10,7 +10,7 @@
                     <a class="nav-link active" aria-current="page" href="/">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/cadastrarCliente.php">Cadastrar clientes</a>
+                    <a class="nav-link" href="/cadastrar">Cadastrar clientes</a>
                 </li>
             </ul>
         </div>
