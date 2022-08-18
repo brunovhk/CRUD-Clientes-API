@@ -1,4 +1,4 @@
 <?php
-$username = 'root';
-$password = '100293Arm';
+$username = 'MYSQL_USER';
+$password = 'MYSQL_PASSWORD';
 $dsn = 'mysql:host=localhost;dbname=crud_clientes';
